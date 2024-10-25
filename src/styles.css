@@ -1,0 +1,84 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#app {
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 7px #000000;
+}
+#display {
+  width: 250px;
+  padding: 25px 20px;
+  margin-bottom: 5px;
+  text-align: right;
+  font-size: 1.7rem;
+  background: #333;
+  color: white;
+  border-radius: 10px;
+}
+
+#key {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 15px;
+}
+#key button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 0 0 7px #4e4e4e;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: #c0c0c0d8;
+  transition: all 0.3s ease;
+}
+
+#key button:hover {
+  background: rgb(211, 211, 211);
+  box-shadow: 5px 5px 7px #161616 inset;
+}
+
+#key button.operator {
+  background-color: #ff8000;
+}
+#key button.clear {
+  transition: all 0.3s ease75;
+}
+#key button.clear:hover {
+  color: #ff8000;
+}
+
+.btns {
+  text-align: center;
+  padding: 20px;
+  background: #27272731;
+}
+.btns .color-black,
+.color-pink {
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 5px;
+}
+.color-black {
+  background: linear-gradient(#ccc, #6e6e6e93);
+  border: 1px solid #1a1a1a;
+  cursor: pointer;
+  transition: all 0.3 linear;
+}
+.color-black:hover {
+  background: linear-gradient(#646464, #e7e7e7da);
+}
+.color-pink {
+  background: linear-gradient(#ff84c1, #ffbcde);
+  border: 1px solid #ff2492;
+  cursor: pointer;
+  transition: all 0.3 linear;
+}
+.color-pink:hover {
+  background: linear-gradient(#ffd2e8, #ff72b9);
+}
